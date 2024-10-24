@@ -39,6 +39,23 @@ Weather Watch Dashboard is a web application that provides real-time weather upd
 
 6. Open your browser and go to `http://localhost:5000`.
 
+# WeatherWatch Dashboard
+
+![Dashboard Overview](screenshots/dashboard-overview.png)
+
+## Features
+
+- Real-time weather updates for multiple cities
+- Temperature conversion between Celsius and Fahrenheit
+
+## Screenshots
+
+### Dashboard Overview
+![Dashboard Overview](screenshots/dashboard-overview.png)
+
+### Detailed View
+![Detailed View](screenshots/detailed-view.png)
+
 ## Usage
 
 - Use the toggle switch to change the temperature unit between Celsius and Fahrenheit.
