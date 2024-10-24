@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Watch Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1 class="dashboard-title">Weather Watch Dashboard</h1>
+    
+    <div class="dashboard-container">
+        
+        <div class="current-weather">
+            <h2>Current Weather</h2>
+            <div id="city-overview"></div>
+        </div>
+        
+        <div class="detailed-view">
+            <h2>Detailed View</h2>
+            <select id="city-select">
+                <option value="">Select a city</option>
+            </select>
+            <div id="city-details"></div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="weatherChart"></canvas>
+        </div>
+        <div class="settings-container"></div>
+            <h2>Settings</h2>
+            <div class="setting">
+                <label>Temperature Unit</label>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="tempUnit" class="toggle-input">
+                    <label for="tempUnit" class="toggle-label"></label>
+                    <span class="toggle-text">°C</span>
+                    <span class="toggle-text">°F</span>
+                </div>
+            </div>
+            <div class="setting">
+                <label for="updateInterval">Update Interval (minutes)</label>
+                <input type="number" id="updateInterval" value="5" min="1" max="60">
+            </div>
+            <div class="setting">
+                <label for="alertThreshold">Alert Threshold (°C)</label>
+                <input type="number" id="alertThreshold" value="35" min="0" max="50">
+            </div>
+        </div>
+
+        <div class="alerts-container">
+            <h2>Alerts</h2>
+            <div id="alertsList"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
