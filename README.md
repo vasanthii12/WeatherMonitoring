@@ -54,7 +54,7 @@ Weather Watch Dashboard is a web application that provides real-time weather upd
 ![Dashboard Overview](screenshots/dashboard-overview2.png)
 
 ### Detailed View
-![Detailed View](screenshots/dashboard-deatiledview.png)
+![Detailed View](screenshots/dashboard-detailedview.png)
 
 ## Usage
 
